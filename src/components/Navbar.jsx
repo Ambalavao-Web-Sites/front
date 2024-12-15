@@ -1,0 +1,13 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import routes from '../routes/routes';
+
+const Navbar = () => {
+    return (
+        <nav>
+            <Link to={routes.home}>Home</Link>
+        </nav>
+    );
+};
+
+export default Navbar;
