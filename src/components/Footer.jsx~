@@ -1,4 +1,3 @@
-// Footer.jsx
 import React from 'react';
 import {Link} from 'react-router-dom';
 import PhoneIcon from '@mui/icons-material/Phone';
@@ -12,7 +11,8 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-gray-900 text-white mt-auto">
+        <footer className="bg-gray-900 text-white">
+            {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Logo and Description */}
@@ -109,13 +109,13 @@ const Footer = () => {
                             © {currentYear} La Commune. Tous droits réservés.
                         </div>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
+                            <a href="" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
                                 <FacebookIcon/>
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
+                            <a href="" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
                                 <TwitterIcon/>
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
+                            <a href="" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
                                 <LinkedInIcon/>
                             </a>
                         </div>
