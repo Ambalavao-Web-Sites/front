@@ -2,30 +2,34 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const HeroTitle = ({
-                         title,
-                         description,
-                         buttons = [],
-                         backgroundImage,
-                         height = "h-[800px]",
-                         overlayColor = "bg-black/50",
-                         titleColor = "text-white",
-                         descriptionColor = "text-gray-200",
-                         primaryButtonColor = "bg-[#228B22]",
-                         primaryButtonHoverColor = "hover:bg-[#1a6b1a]",
-                         secondaryButtonColor = "bg-white",
-                         secondaryButtonTextColor = "text-[#228B22]",
-                         secondaryButtonHoverColor = "hover:bg-gray-100"
-                     }) => {
+                       title,
+                       description,
+                       buttons = [],
+                       backgroundImage,
+                       height = "h-[800px]",
+                       overlayColor = "bg-black/50",
+                       titleColor = "text-white",
+                       descriptionColor = "text-gray-200",
+                       primaryButtonColor = "bg-[#228B22]",
+                       primaryButtonHoverColor = "hover:bg-[#1a6b1a]",
+                       secondaryButtonColor = "bg-white",
+                       secondaryButtonTextColor = "text-[#228B22]",
+                       secondaryButtonHoverColor = "hover:bg-gray-100"
+                   }) => {
     return (
         <section className={`relative ${height}`}>
+            {/* Background image */}
             <div
-                className={`absolute inset-0 ${overlayColor}`}
+                className="absolute inset-0"
                 style={backgroundImage ? {
                     backgroundImage: `url(${backgroundImage})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 } : {}}
             />
+            {/* Dark overlay */}
+            <div className={`absolute inset-0 ${overlayColor}`}/>
+
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
                 <div className="space-y-6 text-center w-full">
                     {title && (

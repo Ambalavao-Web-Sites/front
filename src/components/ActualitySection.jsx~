@@ -32,25 +32,67 @@ const NewsCard = ({date, title, description, imageUrl}) => (
 const ActualitySection = () => {
     const news = [
         {
-            date: "15/12/2024",
-            title: "Nouvelle campagne de reboisement",
-            description: "La commune lance une campagne de plantation d'arbres dans les zones rurales...",
+            date: "08/12/2024",
+            title: "Lancement du marché artisanal mensuel",
+            description: "Découvrez les produits locaux et soutenez les artisans de la région...",
             imageUrl: "/api/placeholder/400/320"
         },
         {
-            date: "12/12/2024",
-            title: "Fête du papier Antemoro",
-            description: "Rejoignez-nous pour célébrer l'artisanat local avec des expositions et animations...",
+            date: "05/12/2024",
+            title: "Programme de rénovation des routes",
+            description: "Des travaux de réhabilitation sont en cours dans plusieurs quartiers...",
             imageUrl: "/api/placeholder/400/320"
         },
         {
-            date: "10/12/2024",
-            title: "Réunion du conseil municipal",
-            description: "Le compte rendu de la dernière réunion est désormais disponible...",
+            date: "01/12/2024",
+            title: "Nouvelle bibliothèque communale",
+            description: "Un espace dédié à la lecture et à l'apprentissage ouvre ses portes...",
             imageUrl: "/api/placeholder/400/320"
         },
-
+        {
+            date: "28/11/2024",
+            title: "Formation en agriculture durable",
+            description: "Inscrivez-vous pour participer à des ateliers pratiques sur les techniques modernes...",
+            imageUrl: "/api/placeholder/400/320"
+        },
+        {
+            date: "25/11/2024",
+            title: "Célébration de la journée de l'environnement",
+            description: "Une journée d'activités et de sensibilisation pour protéger notre planète...",
+            imageUrl: "/api/placeholder/400/320"
+        },
+        {
+            date: "20/11/2024",
+            title: "Appel à bénévoles pour le festival de musique",
+            description: "Participez à l'organisation d'un événement culturel unique...",
+            imageUrl: "/api/placeholder/400/320"
+        },
+        {
+            date: "15/11/2024",
+            title: "Éclairage public : nouvelles installations",
+            description: "De nouvelles lampes solaires sont en cours d'installation dans les zones mal éclairées...",
+            imageUrl: "/api/placeholder/400/320"
+        },
+        {
+            date: "10/11/2024",
+            title: "Séance de vaccination gratuite",
+            description: "La commune organise une campagne de vaccination pour tous les résidents...",
+            imageUrl: "/api/placeholder/400/320"
+        },
+        {
+            date: "05/11/2024",
+            title: "Atelier sur le recyclage",
+            description: "Apprenez les bases du tri sélectif et du recyclage pour un avenir plus vert...",
+            imageUrl: "/api/placeholder/400/320"
+        },
+        {
+            date: "01/11/2024",
+            title: "Inauguration du parc communal rénové",
+            description: "Rejoignez-nous pour l'ouverture officielle avec des activités pour toute la famille...",
+            imageUrl: "/api/placeholder/400/320"
+        }
     ];
+
 
     const [currentPage, setCurrentPage] = useState(0);
     const itemsPerPage = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
@@ -70,7 +112,7 @@ const ActualitySection = () => {
         : news;
 
     return (
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-gray-400">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="mb-12">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">

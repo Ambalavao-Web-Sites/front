@@ -1,7 +1,7 @@
 import React from 'react';
 import usePageTitle from "../hooks/usePageTitle";
-import {Link} from 'react-router-dom';
 import {ActualitySection, HeroTitle, ServiceSection} from "../components";
+import backgroundImageHome from "../assets/images/background/bg.jpg";
 
 const Home = () => {
     usePageTitle('Accueil');
@@ -12,7 +12,7 @@ const Home = () => {
             <HeroTitle
                 title="Bienvenu sur le site officiel de la Commune Urbaine d'Ambalavao"
                 description="Découvrez notre histoire, nos projets, et nos richesses culturelles au cœur de la région Haute Matsiatra"
-                backgroundImage="../assets/images/background/bg.jpg"
+                backgroundImage={backgroundImageHome}
                 buttons={[
                     {text: "Présentation", path: "/commune", variant: "primary"},
                     {text: "Actualités", path: "/actualites", variant: "secondary"}
