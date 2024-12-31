@@ -5,6 +5,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import logo from '../assets/images/logos/logo.png';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -112,17 +113,11 @@ const Navbar = () => {
                         {/* Logo */}
                         <div className="flex-shrink-0">
                             <Link to="/" className="flex items-center space-x-3 group">
-                                <div
-                                    className="h-12 w-12 bg-gradient-to-br from-[#228B22] to-[#1a6b1a] rounded-xl flex items-center justify-center transform rotate-12 group-hover:rotate-0 transition-all duration-300 shadow-lg"
-                                >
-                                    <span
-                                        className="text-white text-2xl font-bold transform -rotate-12 group-hover:rotate-0 transition-all duration-300">
-                                        LC
-                                    </span>
-                                </div>
-                                <span className="text-gray-800 font-semibold text-xl hidden sm:block">
-                                    La Commune
-                                </span>
+                                <img
+                                    src={logo}
+                                    alt="La Commune Logo"
+                                    className="w-full h-full object-cover"
+                                />
                             </Link>
                         </div>
 

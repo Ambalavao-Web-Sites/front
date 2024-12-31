@@ -7,6 +7,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import logo from '../assets/images/logos/logo.png';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -18,11 +19,11 @@ const Footer = () => {
                     {/* Logo and Description */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-3">
-                            <div
-                                className="h-12 w-12 bg-gradient-to-br from-[#228B22] to-[#1a6b1a] rounded-xl flex items-center justify-center shadow-lg">
-                                <span className="text-white text-2xl font-bold">LC</span>
-                            </div>
-                            <span className="text-xl font-semibold">La Commune</span>
+                            <img
+                                src={logo}
+                                alt="La Commune Logo"
+                                className="w-16 h-16 object-cover"
+                            />
                         </div>
                         <p className="text-gray-400 text-sm">
                             Votre commune dynamique et accueillante, engagée pour le bien-être de ses habitants et le

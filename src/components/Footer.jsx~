@@ -1,3 +1,4 @@
+// Footer.jsx
 import React from 'react';
 import {Link} from 'react-router-dom';
 import PhoneIcon from '@mui/icons-material/Phone';
@@ -6,23 +7,23 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import logo from '../assets/images/logos/logo.png';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-gray-900 text-white">
-            {/* Main Footer Content */}
+        <footer className="bg-gray-900 text-white mt-auto">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Logo and Description */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-3">
-                            <div
-                                className="h-12 w-12 bg-gradient-to-br from-[#228B22] to-[#1a6b1a] rounded-xl flex items-center justify-center shadow-lg">
-                                <span className="text-white text-2xl font-bold">LC</span>
-                            </div>
-                            <span className="text-xl font-semibold">La Commune</span>
+                            <img
+                                src={logo}
+                                alt="La Commune Logo"
+                                className="w-20 h-20 object-cover"
+                            />
                         </div>
                         <p className="text-gray-400 text-sm">
                             Votre commune dynamique et accueillante, engagée pour le bien-être de ses habitants et le
@@ -109,13 +110,13 @@ const Footer = () => {
                             © {currentYear} La Commune. Tous droits réservés.
                         </div>
                         <div className="flex space-x-4">
-                            <a href="" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
+                            <a href="#" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
                                 <FacebookIcon/>
                             </a>
-                            <a href="" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
+                            <a href="#" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
                                 <TwitterIcon/>
                             </a>
-                            <a href="" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
+                            <a href="#" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
                                 <LinkedInIcon/>
                             </a>
                         </div>

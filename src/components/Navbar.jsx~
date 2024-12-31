@@ -5,6 +5,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import logo from '../assets/images/logos/logo.png';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -70,7 +71,19 @@ const Navbar = () => {
     }, [isMobileMenuOpen]);
 
     const isActive = (path) => {
+        if (path === '/') {
+            return location.pathname === '/';
+        }
         return location.pathname.startsWith(path);
+    };
+
+    const isSubItemActive = (path) => {
+        return location.pathname === path;
+    };
+
+    const isParentActive = (item) => {
+        if (!item.subItems) return false;
+        return item.subItems.some(subItem => location.pathname === subItem.path);
     };
 
     const handleMouseEnter = (path) => {
@@ -100,17 +113,11 @@ const Navbar = () => {
                         {/* Logo */}
                         <div className="flex-shrink-0">
                             <Link to="/" className="flex items-center space-x-3 group">
-                                <div
-                                    className="h-12 w-12 bg-gradient-to-br from-[#228B22] to-[#1a6b1a] rounded-xl flex items-center justify-center transform rotate-12 group-hover:rotate-0 transition-all duration-300 shadow-lg"
-                                >
-                                    <span
-                                        className="text-white text-2xl font-bold transform -rotate-12 group-hover:rotate-0 transition-all duration-300">
-                                        LC
-                                    </span>
-                                </div>
-                                <span className="text-gray-800 font-semibold text-xl hidden sm:block">
-                                    La Commune
-                                </span>
+                                <img
+                                    src={logo}
+                                    alt="La Commune Logo"
+                                    className="w-full h-full object-cover transform -rotate-12 group-hover:rotate-0 transition-all duration-300"
+                                />
                             </Link>
                         </div>
 
@@ -126,7 +133,9 @@ const Navbar = () => {
                                     <Link
                                         to={item.subItems ? '#' : item.path}
                                         className={`relative text-gray-700 px-4 py-2.5 rounded-lg flex items-center hover:text-[#228B22] transition-colors duration-300 ${
-                                            isActive(item.path) ? 'text-[#228B22] font-medium' : ''
+                                            isActive(item.path) || isParentActive(item)
+                                                ? 'text-[#228B22] font-medium bg-green-50'
+                                                : ''
                                         }`}
                                         onClick={(e) => {
                                             if (item.subItems) {
@@ -151,7 +160,11 @@ const Navbar = () => {
                                                 <Link
                                                     key={subItem.path}
                                                     to={subItem.path}
-                                                    className="block px-4 py-2.5 text-gray-700 hover:bg-[#228B22] hover:text-white transition-colors duration-200"
+                                                    className={`block px-4 py-2.5 text-gray-700 hover:bg-[#228B22] hover:text-white transition-colors duration-200 ${
+                                                        isSubItemActive(subItem.path)
+                                                            ? 'bg-green-50 text-[#228B22] font-medium'
+                                                            : ''
+                                                    }`}
                                                 >
                                                     {subItem.label}
                                                 </Link>
@@ -162,7 +175,9 @@ const Navbar = () => {
                             ))}
                             <Link
                                 to="/contact"
-                                className="flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#228B22] to-[#1a6b1a] text-white hover:shadow-lg hover:shadow-[#228B22]/50 transition-all duration-300"
+                                className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#228B22] to-[#1a6b1a] text-white hover:shadow-lg hover:shadow-[#228B22]/50 transition-all duration-300 ${
+                                    location.pathname === '/contact' ? 'shadow-lg shadow-[#228B22]/50' : ''
+                                }`}
                             >
                                 <PhoneIcon fontSize="small"/>
                                 <span className="font-medium">Contact</span>
@@ -213,13 +228,19 @@ const Navbar = () => {
                         {navItems.map((item) => (
                             <div key={item.path} className="border-b border-gray-100 last:border-0">
                                 <div
-                                    className="flex items-center justify-between py-3 px-2 cursor-pointer"
+                                    className={`flex items-center justify-between py-3 px-2 cursor-pointer ${
+                                        isActive(item.path) || isParentActive(item)
+                                            ? 'bg-green-50 rounded-lg'
+                                            : ''
+                                    }`}
                                     onClick={() => toggleMobileSubmenu(item.path)}
                                 >
                                     <Link
                                         to={item.subItems ? '#' : item.path}
                                         className={`text-gray-700 ${
-                                            isActive(item.path) ? 'text-[#228B22] font-medium' : ''
+                                            isActive(item.path) || isParentActive(item)
+                                                ? 'text-[#228B22] font-medium'
+                                                : ''
                                         }`}
                                         onClick={(e) => {
                                             if (item.subItems) {
@@ -245,7 +266,11 @@ const Navbar = () => {
                                             <Link
                                                 key={subItem.path}
                                                 to={subItem.path}
-                                                className="block py-2 px-3 text-gray-600 hover:text-[#228B22]"
+                                                className={`block py-2 px-3 text-gray-600 hover:text-[#228B22] ${
+                                                    isSubItemActive(subItem.path)
+                                                        ? 'text-[#228B22] font-medium bg-green-50 rounded-lg'
+                                                        : ''
+                                                }`}
                                                 onClick={() => setIsMobileMenuOpen(false)}
                                             >
                                                 {subItem.label}
@@ -257,7 +282,9 @@ const Navbar = () => {
                         ))}
                         <Link
                             to="/contact"
-                            className="flex items-center justify-center space-x-2 px-5 py-3 mt-4 rounded-xl bg-gradient-to-r from-[#228B22] to-[#1a6b1a] text-white hover:shadow-lg hover:shadow-[#228B22]/50 transition-all duration-300"
+                            className={`flex items-center justify-center space-x-2 px-5 py-3 mt-4 rounded-xl bg-gradient-to-r from-[#228B22] to-[#1a6b1a] text-white hover:shadow-lg hover:shadow-[#228B22]/50 transition-all duration-300 ${
+                                location.pathname === '/contact' ? 'shadow-lg shadow-[#228B22]/50' : ''
+                            }`}
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             <PhoneIcon fontSize="small"/>
