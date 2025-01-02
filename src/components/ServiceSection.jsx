@@ -60,8 +60,8 @@ const ServicesSection = () => {
                     Nos services pour vous accompagner au quotidien
                 </h2>
                 <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-8 sm:mb-12 lg:mb-16 max-w-3xl">
-                    La Commune Urbaine d'Ambalaevo met à votre disposition une gamme de services adaptés à vos besoins.
-                    Que ce soit pour vos démarches administratives, vos projets professionnels, ou votre quotidien, nos
+                    La <span classname="text-green-500">Commune Urbaine d'Ambalavao</span> met à votre disposition une <span classname="text-green-500">gamme de services</span> adaptés à vos besoins.
+                    Que ce soit pour vos <span classname="text-green-500">démarches administratives</span>, vos <span classname="text-green-500">projets professionnels</span>, ou votre <span classname="text-green-500">quotidien</span>, nos
                     équipes sont à votre écoute.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
