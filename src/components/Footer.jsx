@@ -109,17 +109,17 @@ const Footer = () => {
                         <div className="text-gray-400 text-sm">
                             © {currentYear} La Commune. Tous droits réservés.
                         </div>
-                        <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
-                                <FacebookIcon/>
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
-                                <TwitterIcon/>
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">
-                                <LinkedInIcon/>
-                            </a>
-                        </div>
+                        {/*<div className="flex space-x-4">*/}
+                        {/*    <a href="" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">*/}
+                        {/*        <FacebookIcon/>*/}
+                        {/*    </a>*/}
+                        {/*    <a href="" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">*/}
+                        {/*        <TwitterIcon/>*/}
+                        {/*    </a>*/}
+                        {/*    <a href="" className="text-gray-400 hover:text-[#228B22] transition-colors duration-300">*/}
+                        {/*        <LinkedInIcon/>*/}
+                        {/*    </a>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </div>
