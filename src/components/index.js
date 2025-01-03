@@ -6,3 +6,4 @@ export { default as ActualitySection } from './ActualitySection';
 export { default as StorySection } from './StorySection';
 export { default as GeographySection } from './GeographySection';
 export { default as ElectedOfficialsSection } from './ElectedOfficialsSection';
+export { default as MunicipalCouncilSection } from './MunicipalCouncilSection';

@@ -1,6 +1,12 @@
 import React from 'react';
 import usePageTitle from "../hooks/usePageTitle";
-import {ElectedOfficialsSection, GeographySection, HeroTitle, StorySection} from "../components";
+import {
+    ElectedOfficialsSection,
+    GeographySection,
+    HeroTitle,
+    MunicipalCouncilSection,
+    StorySection
+} from "../components";
 import backgroundImageHome from "../assets/images/background/bg.jpg";
 
 const Township = () => {
@@ -23,6 +29,9 @@ const Township = () => {
 
             {/*Elected Official Section*/}
             <ElectedOfficialsSection />
+
+            {/*Municipal Council Section*/}
+            <MunicipalCouncilSection />
         </div>
     );
 };
