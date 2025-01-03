@@ -6,7 +6,6 @@ import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import AgricultureIcon from '@mui/icons-material/Agriculture';
 import PeopleIcon from '@mui/icons-material/People';
 import backgroundImageHome from "../assets/images/background/bg.jpg";
-import associationImage from "../assets/images/default/association.jpg";
 
 const Associations = () => {
     const associationCategories = [
@@ -20,7 +19,7 @@ const Associations = () => {
                     activities: ["Danses traditionnelles", "Artisanat local", "Festivals culturels"],
                     members: 45,
                     contact: "034 50 123 45",
-                    image: associationImage
+                    image: "/images/culture-association.jpg"
                 },
                 {
                     name: "Tranobe Vakoka",
@@ -28,7 +27,7 @@ const Associations = () => {
                     activities: ["Contes et légendes", "Musique traditionnelle", "Cérémonies traditionnelles"],
                     members: 30,
                     contact: "034 50 123 46",
-                    image: associationImage
+                    image: "/images/tradition-association.jpg"
                 }
             ]
         },
@@ -42,7 +41,7 @@ const Associations = () => {
                     activities: ["Entraînements", "Compétitions régionales", "Formation des jeunes"],
                     members: 75,
                     contact: "034 50 123 47",
-                    image: associationImage
+                    image: "/images/football-association.jpg"
                 },
                 {
                     name: "Club Basket Ambalavao",
@@ -50,7 +49,7 @@ const Associations = () => {
                     activities: ["Tournois inter-quartiers", "École de basket", "Championnats"],
                     members: 40,
                     contact: "034 50 123 48",
-                    image: associationImage
+                    image: "/images/basket-association.jpg"
                 }
             ]
         },
@@ -64,7 +63,7 @@ const Associations = () => {
                     activities: ["Formation agricole", "Vente groupée", "Partage de matériel"],
                     members: 120,
                     contact: "034 50 123 49",
-                    image: associationImage
+                    image: "/images/agriculture-association.jpg"
                 }
             ]
         },
@@ -78,7 +77,7 @@ const Associations = () => {
                     activities: ["Projets communautaires", "Entraide sociale", "Activités de quartier"],
                     members: 85,
                     contact: "034 50 123 50",
-                    image: associationImage
+                    image: "/images/quartier-association.jpg"
                 }
             ]
         }
