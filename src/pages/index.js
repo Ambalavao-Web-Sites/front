@@ -5,4 +5,5 @@ export { default as Partners } from './Partners';
 export { default as Associations } from './Associations';
 export { default as Tourism } from './Tourism';
 export { default as Leisure } from './Leisure';
+export { default as Contact } from './Contact';
 

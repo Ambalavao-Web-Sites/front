@@ -5,7 +5,8 @@ const routes = {
     partner: 'projets/partenaires',
     association: 'projets/associations',
     tourism: 'tourisme/activites',
-    leisure: 'tourisme/loisirs'
+    leisure: 'tourisme/loisirs',
+    contact: '/contact'
 
 };
 
