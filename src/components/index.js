@@ -3,3 +3,6 @@ export { default as Footer } from './Footer';
 export { default as HeroTitle } from './HeroTitle';
 export { default as ServiceSection } from './ServiceSection';
 export { default as ActualitySection } from './ActualitySection';
+export { default as StorySection } from './StorySection';
+export { default as GeographySection } from './GeographySection';
+export { default as ElectedOfficialsSection } from './ElectedOfficialsSection';
