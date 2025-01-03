@@ -10,7 +10,7 @@ import {
 import backgroundImageHome from "../assets/images/background/bg.jpg";
 
 const Township = () => {
-    usePageTitle('Accueil');
+    usePageTitle('Les élus');
 
     return (
         <div className="flex flex-col">
