@@ -6,8 +6,10 @@ import PublicIcon from '@mui/icons-material/Public';
 import SchoolIcon from '@mui/icons-material/School';
 import backgroundImageHome from "../assets/images/background/bg.jpg";
 import partnerImage from "../assets/images/default/partner.jpg";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Partners = () => {
+    usePageTitle('Partenaires');
     const partnerCategories = [
         {
             title: "Partenaires Institutionnels",

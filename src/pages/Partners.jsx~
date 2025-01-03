@@ -39,7 +39,7 @@ const Partners = () => {
                 },
                 {
                     name: "Banque Mondiale",
-                    logo: "/images/worldbank-logo.jpg",
+                    logo: partnerImage,
                     description: "Soutien aux projets de développement urbain et de réduction de la pauvreté.",
                     website: "https://worldbank.org"
                 }

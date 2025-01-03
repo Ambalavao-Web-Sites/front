@@ -4,8 +4,10 @@ import EmojiNatureRoundedIcon from '@mui/icons-material/EmojiNatureRounded';
 import ImagesearchRollerRoundedIcon from '@mui/icons-material/ImagesearchRollerRounded';
 import SportsEsportsRoundedIcon from '@mui/icons-material/SportsEsportsRounded';
 import backgroundImageHome from "../assets/images/background/bg.jpg";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Leisure = () => {
+    usePageTitle('Loisirs');
     const leisureCategories = [
         {
             title: "Loisirs Naturels",

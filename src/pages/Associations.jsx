@@ -7,8 +7,10 @@ import AgricultureIcon from '@mui/icons-material/Agriculture';
 import PeopleIcon from '@mui/icons-material/People';
 import backgroundImageHome from "../assets/images/background/bg.jpg";
 import associationImage from "../assets/images/default/association.jpg";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Associations = () => {
+    usePageTitle('Associations');
     const associationCategories = [
         {
             title: "Associations Culturelles",

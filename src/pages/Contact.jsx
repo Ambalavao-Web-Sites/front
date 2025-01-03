@@ -5,8 +5,10 @@ import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 import backgroundImageHome from "../assets/images/background/bg.jpg";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Contact = () => {
+    usePageTitle('Contact');
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
             <HeroTitle

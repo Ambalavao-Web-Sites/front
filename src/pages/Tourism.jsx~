@@ -6,10 +6,8 @@ import HotelIcon from '@mui/icons-material/Hotel';
 import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 import backgroundImageHome from '../assets/images/background/bg.jpg';
 import tourismImage from '../assets/images/default/tourism.jpg';
-import usePageTitle from "../hooks/usePageTitle";
 
 const Tourism = () => {
-    usePageTitle('Tourismes');
     const tourismData = [
         {
             category: "Sites Naturels",

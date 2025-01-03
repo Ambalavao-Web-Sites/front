@@ -5,9 +5,11 @@ import CancelIcon from '@mui/icons-material/Cancel';
 import {HeroTitle} from "../components";
 import backgroundImageHome from "../assets/images/background/bg.jpg";
 import projectImage from "../assets/images/default/project.jpg";
+import usePageTitle from "../hooks/usePageTitle";
 
 
 const Project = () => {
+    usePageTitle('Projets');
     const projects = [
         {
             title: "Construction d'une nouvelle école primaire",
