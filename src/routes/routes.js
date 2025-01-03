@@ -2,7 +2,8 @@ const routes = {
     home: '/',
     township: '/commune',
     project: '/projets/liste',
-    partner: 'projets/partenaires'
+    partner: 'projets/partenaires',
+    association: 'projets/associations',
 
 };
 

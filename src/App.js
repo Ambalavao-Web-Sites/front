@@ -2,7 +2,7 @@ import './App.css';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import React from "react";
 import {Footer, Navbar} from "./components";
-import {Home, Partners, Project, Township} from "./pages";
+import {Associations, Home, Partners, Project, Township} from "./pages";
 import routes from "./routes/routes";
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
                 <Route path={routes.township} element={<Township/>}/>
                 <Route path={routes.project} element={<Project/>}/>
                 <Route path={routes.partner} element={<Partners/>}/>
+                <Route path={routes.association} element={<Associations/>}/>
             </Routes>
             <Footer/>
         </Router>
