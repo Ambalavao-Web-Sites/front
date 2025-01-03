@@ -5,6 +5,7 @@ import LocalActivityIcon from '@mui/icons-material/LocalActivity';
 import HotelIcon from '@mui/icons-material/Hotel';
 import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 import backgroundImageHome from '../assets/images/background/bg.jpg';
+import tourismImage from '../assets/images/default/tourism.jpg';
 
 const Tourism = () => {
     const tourismData = [
@@ -17,7 +18,7 @@ const Tourism = () => {
                     name: "Massif d'Andringitra",
                     description: "Parc national classé patrimoine mondial, offrant des randonnées spectaculaires et une vue imprenable sur les sommets granitiques.",
                     activities: ["Randonnée", "Observation d'oiseaux", "Camping"],
-                    image: "https://upload.wikimedia.org/wikipedia/commons/9/94/Andringitra_National_Park.jpg",
+                    image: tourismImage,
                     duration: "1-3 jours",
                     difficulty: "Modérée à difficile",
                 },
@@ -25,7 +26,7 @@ const Tourism = () => {
                     name: "Cascade d'Ambalavao",
                     description: "Chute d'eau naturelle entourée d'une végétation luxuriante, idéale pour la baignade et le pique-nique.",
                     activities: ["Baignade", "Pique-nique", "Photographie"],
-                    image: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Waterfall_in_Madagascar.jpg",
+                    image: tourismImage,
                     duration: "Demi-journée",
                     difficulty: "Facile",
                 },
@@ -40,7 +41,7 @@ const Tourism = () => {
                     name: "Atelier de Papier Antemoro",
                     description: "Découvrez la fabrication traditionnelle du papier Antemoro, un artisanat unique à Madagascar.",
                     activities: ["Démonstration", "Atelier pratique", "Boutique"],
-                    image: "https://upload.wikimedia.org/wikipedia/commons/4/41/Antemoro_paper_workshop.jpg",
+                    image: tourismImage,
                     duration: "2-3 heures",
                     price: "À partir de 10 000 Ar",
                 },
@@ -48,7 +49,7 @@ const Tourism = () => {
                     name: "Marché artisanal",
                     description: "Le plus grand marché de tissage de la soie sauvage de la région, avec des artisans locaux.",
                     activities: ["Shopping", "Démonstration de tissage"],
-                    image: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Artisan_market_in_Madagascar.jpg",
+                    image: tourismImage,
                     duration: "2-4 heures",
                     bestTime: "Mercredi et samedi matin",
                 },
@@ -63,7 +64,7 @@ const Tourism = () => {
                     name: "Hôtel Aux Bougainvillées",
                     description: "Établissement de charme avec vue sur les montagnes et jardin tropical.",
                     facilities: ["Restaurant", "Wifi", "Parking"],
-                    image: "https://upload.wikimedia.org/wikipedia/commons/8/86/Hotel_in_Madagascar.jpg",
+                    image: tourismImage,
                     priceRange: "100 000 - 200 000 Ar/nuit",
                     contact: "+261 34 50 123 45",
                 },

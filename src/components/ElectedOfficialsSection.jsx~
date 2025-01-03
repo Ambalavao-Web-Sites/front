@@ -3,7 +3,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
 import {motion} from 'framer-motion';
-import electedImage from "../assets/images/default/elected.jpg";
+import electedImage from "../assets/images/default/elected.png";
 
 const ElectedOfficialsSection = () => {
     const officials = [

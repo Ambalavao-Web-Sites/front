@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {ChevronLeft, ChevronRight} from "@mui/icons-material";
+import newsImage from '../assets/images/default/news.jpg'
 
 const NewsCard = ({date, title, description, imageUrl}) => (
     <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -35,61 +36,61 @@ const ActualitySection = () => {
             date: "08/12/2024",
             title: "Lancement du marché artisanal mensuel",
             description: "Découvrez les produits locaux et soutenez les artisans de la région...",
-            imageUrl: "/api/placeholder/400/320"
+            imageUrl: newsImage
         },
         {
             date: "05/12/2024",
             title: "Programme de rénovation des routes",
             description: "Des travaux de réhabilitation sont en cours dans plusieurs quartiers...",
-            imageUrl: "/api/placeholder/400/320"
+            imageUrl: newsImage
         },
         {
             date: "01/12/2024",
             title: "Nouvelle bibliothèque communale",
             description: "Un espace dédié à la lecture et à l'apprentissage ouvre ses portes...",
-            imageUrl: "/api/placeholder/400/320"
+            imageUrl: newsImage
         },
         {
             date: "28/11/2024",
             title: "Formation en agriculture durable",
             description: "Inscrivez-vous pour participer à des ateliers pratiques sur les techniques modernes...",
-            imageUrl: "/api/placeholder/400/320"
+            imageUrl: newsImage
         },
         {
             date: "25/11/2024",
             title: "Célébration de la journée de l'environnement",
             description: "Une journée d'activités et de sensibilisation pour protéger notre planète...",
-            imageUrl: "/api/placeholder/400/320"
+            imageUrl: newsImage
         },
         {
             date: "20/11/2024",
             title: "Appel à bénévoles pour le festival de musique",
             description: "Participez à l'organisation d'un événement culturel unique...",
-            imageUrl: "/api/placeholder/400/320"
+            imageUrl: newsImage
         },
         {
             date: "15/11/2024",
             title: "Éclairage public : nouvelles installations",
             description: "De nouvelles lampes solaires sont en cours d'installation dans les zones mal éclairées...",
-            imageUrl: "/api/placeholder/400/320"
+            imageUrl: newsImage
         },
         {
             date: "10/11/2024",
             title: "Séance de vaccination gratuite",
             description: "La commune organise une campagne de vaccination pour tous les résidents...",
-            imageUrl: "/api/placeholder/400/320"
+            imageUrl: newsImage
         },
         {
             date: "05/11/2024",
             title: "Atelier sur le recyclage",
             description: "Apprenez les bases du tri sélectif et du recyclage pour un avenir plus vert...",
-            imageUrl: "/api/placeholder/400/320"
+            imageUrl: newsImage
         },
         {
             date: "01/11/2024",
             title: "Inauguration du parc communal rénové",
             description: "Rejoignez-nous pour l'ouverture officielle avec des activités pour toute la famille...",
-            imageUrl: "/api/placeholder/400/320"
+            imageUrl: newsImage
         }
     ];
 
